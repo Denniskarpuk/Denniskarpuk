@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    text-align: center;
+    margin: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+.course {
+    background-color: white;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.html {
+    border: 3px solid orange;
+}
+
+.css {
+    border: 3px solid dodgerblue;
+}
+
+.js {
+    border: 3px solid gold;
+}
+
+.html-text {
+    color: darkorange;
+}
+
+.css-text {
+    color: navy;
+}
+
+.js-text {
+    color: goldenrod;
+}
+
+.notice {
+    width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+}
