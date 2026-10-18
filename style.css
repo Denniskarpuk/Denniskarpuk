@@ -1,0 +1,214 @@
+
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8f1;
+    color: #26382b;
+}
+
+header {
+    background-color: #216b45;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Навігаційне меню Flexbox */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #d7edda;
+    padding: 20px;
+}
+
+.menu a {
+    color: #216b45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #102f1d;
+}
+
+main {
+    padding: 25px;
+}
+
+h2 {
+    color: #216b45;
+    margin-top: 35px;
+}
+
+/* Каталог товарів CSS Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #a7c9ad;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card h3 {
+    color: #216b45;
+}
+
+/* Flexbox для ціни та кнопки */
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-bottom span {
+    color: #216b45;
+    font-weight: bold;
+}
+
+button {
+    background-color: #278447;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #16472e;
+}
+
+/* Спільне завдання: три кнопки */
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #d7edda;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* flex-direction */
+.direction {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.direction div {
+    background-color: #91c99d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/*
+row — елементи розташовані в рядок.
+column — елементи розташовані в колонку.
+Для перевірки зміни row на column.
+*/
+
+/* flex-wrap */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    width: 200px;
+    box-sizing: border-box;
+    background-color: #cce5d0;
+    border: 1px solid #5c936a;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Проста Grid-сітка */
+.grid-example {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-example div {
+    background-color: #91c99d;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Перший елемент займає дві колонки */
+.grid-example .big {
+    grid-column: span 2;
+    background-color: #278447;
+    color: white;
+}
+
+/* Адаптивна Grid-сітка */
+.adaptive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.adaptive-grid div {
+    background-color: white;
+    border: 1px solid #a7c9ad;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Нижня частина сторінки */
+#practice {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #d7edda;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #216b45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Для маленьких екранів */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .direction {
+        flex-direction: column;
+    }
+}
