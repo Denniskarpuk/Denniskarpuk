@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tech Store</h1>
+        <p>Інтернет-магазин техніки</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#home">Головна</a>
+        <a href="#products">Товари</a>
+        <a href="#contacts">Контакти</a>
+    </nav>
+
+    <main id="home">
+        <h2>Популярні товари</h2>
+
+        <section class="products" id="products">
+            <div class="product">
+                <span class="discount">-20%</span>
+                <h3>Ноутбук</h3>
+                <p>Ноутбук для навчання та роботи.</p>
+                <p class="price">25 000 грн</p>
+            </div>
+
+            <div class="product">
+                <span class="discount">-15%</span>
+                <h3>Смартфон</h3>
+                <p>Потужний смартфон з якісною камерою.</p>
+                <p class="price">15 000 грн</p>
+            </div>
+
+            <div class="product">
+                <span class="discount">-10%</span>
+                <h3>Навушники</h3>
+                <p>Навушники для музики та дзвінків.</p>
+                <p class="price">3 500 грн</p>
+            </div>
+        </section>
+
+        <h2>Демонстрація static</h2>
+        <div class="static-box">Перший блок</div>
+        <div class="static-box second">Другий блок</div>
+        <div class="static-box">Третій блок</div>
+
+        <h2>Демонстрація relative</h2>
+        <div class="relative-box">Цей блок зміщений</div>
+
+        <h2>Реклама</h2>
+        <div class="banner">
+            <div class="banner-text">
+                <h3>Світ техніки</h3>
+                <p>Обирай найкраще для себе!</p>
+            </div>
+            <button class="banner-button"
+                onclick="location.href='#products'">
+                Детальніше
+            </button>
+        </div>
+
+        <h2>Демонстрація z-index</h2>
+        <div class="layers">
+            <div class="box1">Блок 1</div>
+            <div class="box2">Блок 2</div>
+        </div>
+
+        <h2 id="contacts">Контакти</h2>
+        <p>Телефон: +380 00 000 00 00</p>
+        <p>Електронна пошта: techstore@example.com</p>
+
+        <h2>Додатковий текст</h2>
+        <p>У нашому магазині можна знайти техніку для навчання,
+        роботи та відпочинку.</p>
+        <p>Ми пропонуємо різні товари за доступними цінами.</p>
+        <p>Обирайте товар, який підходить саме вам.</p>
+    </main>
+
+    <footer>
+        <p>Tech Store © 2026</p>
+    </footer>
+
+    <button class="help"
+        onclick="alert('Чим можемо допомогти?')">
+        Допомога
+    </button>
+
+</body>
+</html>

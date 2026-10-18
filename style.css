@@ -1,65 +1,200 @@
+
+/* Загальні стилі */
 body {
-    font-family: Arial;
-    background-color: lightgray;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f8f1;
+    color: #26382b;
 }
 
-h1 {
-    text-align: center;
-    background-color: navy;
+header {
+    background-color: #216b45;
     color: white;
-    padding: 15px;
-}
-
-nav {
     text-align: center;
-    margin: 10px;
+    padding: 25px;
 }
 
-nav a {
-    margin: 0 10px;
+/* Меню sticky */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #d7edda;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 2px solid #9bc9a5;
+}
+
+.menu a {
+    color: #216b45;
+    text-decoration: none;
+    margin: 0 20px;
     font-weight: bold;
+}
+
+.menu a:hover {
+    color: #102f1d;
+}
+
+/* Основний контент */
+main {
+    padding: 25px;
 }
 
 h2 {
-    text-align: center;
+    color: #216b45;
 }
 
-.course {
+/* Картки товарів */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    width: 250px;
+    border: 1px solid #a7c9ad;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
     background-color: white;
-    width: 300px;
-    margin: 10px auto;
-    padding: 10px;
 }
 
-.html {
-    border: 3px solid orange;
+.product h3 {
+    margin-top: 25px;
+    color: #216b45;
 }
 
-.css {
-    border: 3px solid dodgerblue;
-}
-
-.js {
-    border: 3px solid gold;
-}
-
-.html-text {
-    color: darkorange;
-}
-
-.css-text {
-    color: navy;
-}
-
-.js-text {
-    color: goldenrod;
-}
-
-.notice {
-    width: 300px;
-    margin: 15px auto;
-    padding: 10px;
-    background-color: yellow;
-    text-align: center;
+.price {
     font-weight: bold;
+    color: #278447;
+    font-size: 18px;
+}
+
+/* Знижка absolute */
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e34b4b;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* Static */
+.static-box {
+    position: static;
+    border: 1px solid #5c936a;
+    padding: 20px;
+    margin: 10px;
+    background-color: #e0f0e2;
+    border-radius: 6px;
+}
+
+/* top не працює для static */
+.second {
+    top: 50px;
+    background-color: #cce5d0;
+}
+
+/* Relative */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: 2px solid #278447;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Банер */
+.banner {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    height: 220px;
+    margin: 20px 0;
+    background: linear-gradient(120deg, #174d32, #69ad78);
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.banner-text {
+    padding: 20px;
+}
+
+.banner-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #e0f0e2;
+    color: #216b45;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Накладання блоків */
+.layers {
+    position: relative;
+    height: 250px;
+}
+
+.box1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    background-color: #91c99d;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 100px;
+    background-color: #267647;
+    color: white;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Кнопка fixed */
+.help {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 20px;
+    background-color: #216b45;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.help:hover {
+    background-color: #16472e;
+}
+
+footer {
+    background-color: #216b45;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
